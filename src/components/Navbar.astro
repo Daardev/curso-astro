@@ -1,10 +1,11 @@
 ---
 const path = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
 ---
 
 
 		<nav class="text-blue-900">
-			<a href="/" class={path === '/' ? 'activo' : ''}>Inicio</a>
-			<a href="/about" class={path === '/about' ? 'activo' : ''}>Nosotros</a>
-			<a href="/contact" class={path === '/contact' ? 'activo' : ''}>Contacto</a>
+			<a href={`${base}`} class={path === `${base}` || path === `${base}/` ? 'activo' : ''}>Inicio</a>
+			<a href={`${base}about`} class={path === `${base}about` || path === `${base}about/` ? 'activo' : ''}>Nosotros</a>
+			<a href={`${base}contact`} class={path === `${base}contact` || path === `${base}contact/` ? 'activo' : ''}>Contacto</a>
 		</nav>
