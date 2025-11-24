@@ -1,0 +1,10 @@
+---
+const path = Astro.url.pathname;
+---
+
+
+		<nav class="text-blue-900">
+			<a href="/" class={path === '/' ? 'activo' : ''}>Inicio</a>
+			<a href="/about" class={path === '/about' ? 'activo' : ''}>Nosotros</a>
+			<a href="/contact" class={path === '/contact' ? 'activo' : ''}>Contacto</a>
+		</nav>

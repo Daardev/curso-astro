@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body{
+  color: white;
+  background-color: #1d1d1d;
+}
+
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+nav a.activo{
+  color: #ffffff;
+}
